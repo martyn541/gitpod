@@ -1,0 +1,17 @@
+body {
+  background-color: #f5f3f4;
+  color: rgb(18, 16, 12, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.wrapper {
+  max-width: 1330px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-wrapper {
+  max-width: 1396px;
+}
