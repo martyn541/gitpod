@@ -19,62 +19,90 @@
     <link rel="stylesheet" href="./src/css/index.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="wrapper header-wrapper">
-        <a href="./index.html">
-          <img src="./src/images/logo.svg" alt="Logo" />
+        <a class="logo" href="./index.html">
+          <img class="logo-img" src="./src/images/logo.svg" alt="Logo" />
         </a>
-        <nav>
-          <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">We're hiring</a></li>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Changelog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">We're hiring</a>
+            </li>
           </ul>
         </nav>
-        <button>Login</button>
+        <button class="login-button">Login</button>
       </div>
     </header>
-    <main>
-      <section>
+    <main class="main">
+      <section class="hero">
         <div class="wrapper">
-          <div>
-            <h1>Always Ready to Code.</h1>
-            <p>
+          <div class="hero-content">
+            <h1 class="hero-title">Always Ready to Code.</h1>
+            <p class="hero-text">
               Spin up fresh, automated dev environments for each task, in the
               cloud, in seconds.
             </p>
-            <div>
-              <a href="#started">Try Now</a>
-              <p>Open a workspace.Start from any Git context.</p>
+            <div class="try-now">
+              <a class="try-now-link" href="#started">Try Now</a>
+              <p class="try-now-text">
+                Open a workspace.Start from any Git context.
+              </p>
             </div>
-            <ul>
-              <li>
-                <a href="https://about.gitlab.com/"
-                  ><img src="./src/images/gitlab.svg" alt="Git lab"
+            <ul class="hero-list">
+              <li class="hero-item">
+                <a class="hero-link" href="https://about.gitlab.com/"
+                  ><img
+                    class="hero-link-logo"
+                    src="./src/images/gitlab.svg"
+                    alt="Git lab"
                 /></a>
               </li>
-              <li>
-                <a href="https://github.com/"
-                  ><img src="./src/images/github.svg" alt="Git hub"
+              <li class="hero-item">
+                <a class="hero-link" href="https://github.com/"
+                  ><img
+                    class="hero-link-logo"
+                    src="./src/images/github.svg"
+                    alt="Git hub"
                 /></a>
               </li>
-              <li>
-                <a href="https://bitbucket.org/product/"
-                  ><img src="./src/images/bitbucket.svg" alt="bitbucket"
+              <li class="hero-item">
+                <a class="hero-link" href="https://bitbucket.org/product/"
+                  ><img
+                    class="hero-link-logo"
+                    src="./src/images/bitbucket.svg"
+                    alt="bitbucket"
                 /></a>
               </li>
             </ul>
           </div>
-          <div><img src="./src/images/hero.jpg" alt="Developers room" /></div>
+          <div class="hero-photo">
+            <img
+              class="hero-photo-img"
+              src="./src/images/hero.jpg"
+              alt="Developers room"
+            />
+          </div>
         </div>
       </section>
-      <section>
-        <div class="wrapper"></div>
+      <section class="instruction">
+        <div class="wrapper">
+          <p class="instruction-text">
+            Select project,
+            <span class="instruction-text-overline"
+              >check dependencies, checkout branch, view readme.txt, install
+              tools, run build, run test,</span
+            >
+            start coding.
+          </p>
+        </div>
       </section>
-      <section>
+      <section class="documentation">
         <div class="wrapper">
           <div>
             <h2>Think CI/CD for dev environments</h2>
@@ -94,17 +122,55 @@
           <div><img src="./src/images/terminal.png" alt="Terminal" /></div>
         </div>
       </section>
-      <section>
-        <div class="wrapper"></div>
+      <section class="features">
+        <div class="wrapper">
+          <h2 class="features-title">Remote-first. Secure by design.</h2>
+          <div class="features-photo">
+            <img
+              class="features-img"
+              src="./src/images/remote-first.jpg"
+              alt="remote-first"
+            />
+          </div>
+
+          <p class="features-text">
+            You no longer need an over-powered laptop to code, Gitpod works just
+            as smoothly on a Chromebook or iPad. All you need is a browser.
+            Gitpod centralizes all source code and never stores it on insecure
+            machines and networks.
+          </p>
+          <ul class="extension-list">
+            <li class="extension-item">
+              <a href="#" class="extension-link">
+                <img
+                  class="extension-icon"
+                  src="./src/images/chromu.svg"
+                  alt="Chrom"
+                />
+                Chrome Extensio
+              </a>
+            </li>
+            <li class="extension-item">
+              <a href="#" class="extension-link">
+                <img
+                  class="extension-icon"
+                  src="./src/images/firefox.svg"
+                  alt="Firefox"
+                />
+                Firefox Extension
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="reviews">
         <div class="wrapper">
           <h2>Used by 400,000+ developers.</h2>
 
           <ul>
             <li>
               <article>
-                <h3>GitPod is incredibly cool.</h3>
+                <p>GitPod is incredibly cool.</p>
                 <p>
                   In my opinion, this is a big step in open source software
                   contribution. I'm excited to see where we go from here.
@@ -114,7 +180,7 @@
                     <img src="./src/images/Ben Halpern.png" alt="Ben Halpern" />
                   </div>
                   <div>
-                    <h4>Ben Halpern</h4>
+                    <h3>Ben Halpern</h3>
                     <p>
                       Creator and Co-founder
                       <a href="#">@forem</a> and
@@ -125,30 +191,56 @@
               </article>
             </li>
             <li>
-              <p>
-                Let's say we were overwhelmed how smooth @gitpod workspaces
-                creation & own Docker image for workspaces worked. Plus,
-                installing @code extensions from the store and integrating
-                @gitlab CI. That blew my mind entirely, and that is hard ;
-                Michael Friedrich Developer Evangelist @GitLab
-              </p>
-              <img
-                src="./src/images/Michael Friedrich.png"
-                alt="Michael Friedrich"
-              />
+              <article>
+                <p>
+                  Let's say we were overwhelmed how smooth @gitpod workspaces
+                  creation & own Docker image for workspaces worked.
+                </p>
+                <p>
+                  Plus, installing @code extensions from the store and
+                  integrating @gitlab CI. That blew my mind entirely, and that
+                  is hard ;]
+                </p>
+                <div>
+                  <div>
+                    <img
+                      src="./src/images/Michael Friedrich.png"
+                      alt="Michael Friedrich"
+                    />
+                  </div>
+                  <div>
+                    <h3>Michael Friedrich</h3>
+                    <p>
+                      Developer Evangelist
+                      <a href="#">@GitLab</a>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </li>
             <li>
-              <p>
-                Look at any PR (pull request) in a full coding environment where
-                you can edit, build, and test the PR code, by just prepending
-                "gitpod.io#" to the PR URL. Super useful for reviewing/testing
-                stuff without having to check it out locally! Julius Volz
-                Creator @PrometheusIO
-              </p>
-              <img
-                src="./src/images/Michael Friedrich.png"
-                alt="Michael Friedrich"
-              />
+              <article>
+                <p>
+                  Look at any PR (pull request) in a full coding environment
+                  where you can edit, build, and test the PR code, by just
+                  prepending "gitpod.io#" to the PR URL. Super useful for
+                  reviewing/testing stuff without having to check it out
+                  locally!
+                </p>
+                <div>
+                  <div>
+                    <img src="./src/images/Julius Volz.png" alt="Julius Volz" />
+                  </div>
+                  <div>
+                    <h3>Julius Volz</h3>
+
+                    <p>
+                      Creator
+                      <a href="#">@PrometheusIO</a>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </li>
           </ul>
           <ul>
@@ -158,37 +250,59 @@
               </a>
             </li>
             <li>
-              <img src="./src/images/reecodecamp.png" alt="reecodecamp" />
+              <a href="https://www.freecodecamp.org/"
+                ><img src="./src/images/reecodecamp.png" alt="reecodecamp"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/d_wave.png" alt="wave" />
+              <a href="https://www.wavevast.store/uk">
+                <img src="./src/images/d_wave.png" alt="wave"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/google.png" alt="google" />
+              <a href="https://www.google.com/?hl=uk">
+                <img src="./src/images/google.png" alt="google" />
+              </a>
             </li>
             <li>
-              <img src="./src/images/amazon.png" alt="amazon" />
+              <a href="https://www.amazon.com/"
+                ><img src="./src/images/amazon.png" alt="amazon"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/facebook.png" alt="facebook" />
+              <a href="https://www.facebook.com/?locale=uk_UA"
+                ><img src="./src/images/facebook.png" alt="facebook"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/uber.png" alt="uber" />
+              <a href="https://www.uber.com/ua/uk/"
+                ><img src="./src/images/uber.png" alt="uber"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/openai.png" alt="openai" />
+              <a href="https://openai.com/uk-UA/"
+                ><img src="./src/images/openai.png" alt="openai"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/intel.png" alt="intel" />
+              <a href="https://www.intel.com/content/www/us/en/homepage.html"
+                ><img src="./src/images/intel.png" alt="intel"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/tneia.png" alt="theia" />
+              <a href="https://theia-ide.org/"
+                ><img src="./src/images/tneia.png" alt="theia"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/code.png" alt="code" />
+              <a href="https://code.org/en-US"
+                ><img src="./src/images/code.png" alt="code"
+              /></a>
             </li>
             <li>
-              <img src="./src/images/4geeks.png" alt="4geeks" />
+              <a href="https://4geeksacademy.com/us/index"
+                ><img src="./src/images/4geeks.png" alt="4geeks"
+              /></a>
             </li>
           </ul>
         </div>
@@ -273,7 +387,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="wrapper footer-wrapper"></div>
     </footer>
   </body>

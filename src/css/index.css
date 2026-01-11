@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
+  line-height: 1.4;
 }
 .wrapper {
   max-width: 1330px;
@@ -11,7 +12,75 @@ body {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+  background-color: blanchedalmond;
+}
+/* =================================================шапка сайту=============================================================================== */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-wrapper {
   max-width: 1396px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.nav-link {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.login-button {
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #12100c;
+  color: #f9f9f9;
+  padding-inline: 22px;
+  padding-block: 6px;
+  border-radius: 12px;
+}
+/*================================================================hero========================================================================*/
+.hero {
+  padding-top: 52px;
+}
+.hero-title {
+  font-size: 80px;
+  color: #12100c;
+}
+.hero-text {
+  font-size: 23px;
+}
+/* ============================================================instruction=======================================================================~ */
+.instruction {
+  padding-top: 178px;
+  padding-bottom: 178px;
+}
+/*~============================================================documentation========================================================================~ */
+.documentation {
+  padding-top: 160px;
+}
+/* ~===============================================================features===========================================================================~ */
+.features {
+  padding-top: 318px;
+  padding-bottom: 179px;
+}
+.features-title {
+  font-size: 54px;
+}
+/*~===============================================================reviews===========================================================================~ */
+.reviews {
+  padding-bottom: 178px;
+}
+/* ~==============================================================started========================================================================~ */
+.started {
+  padding-bottom: 160px;
+}
+/* ~================================================================footer========================================================================~ */
+.footer {
+  padding-top: 48px;
+  padding-bottom: 80px;
 }
