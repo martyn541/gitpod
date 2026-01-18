@@ -47,12 +47,47 @@ body {
 .hero {
   padding-top: 52px;
 }
+.hero-wrapper {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
 .hero-title {
   font-size: 80px;
+  line-height: 1.1;
   color: #12100c;
+  margin-bottom: 32px;
+  .hero-title-start {
+    display: block;
+  }
 }
 .hero-text {
   font-size: 23px;
+  margin-bottom: 48px;
+}
+.try-now {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.try-now-link {
+  background-color: #ffae33;
+  padding-inline: 46px;
+  padding-block: 12px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.try-now-text {
+  max-width: 190px;
+  font-size: 16px;
+  align-items: center;
+}
+.hero-list {
+  display: flex;
+  gap: 29px;
+  align-items: center;
 }
 /* ============================================================instruction=======================================================================~ */
 .instruction {
