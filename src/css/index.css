@@ -94,26 +94,295 @@ body {
   padding-top: 178px;
   padding-bottom: 178px;
 }
+.instruction-text {
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #12100c;
+  text-align: center;
+}
+.instruction-text-overline {
+  display: block;
+  color: #999795;
+  font-weight: 400;
+  text-decoration: line-through;
+}
 /*~============================================================documentation========================================================================~ */
 .documentation {
   padding-top: 160px;
+}
+.documentation-wrapper {
+  display: flex;
+  gap: 66px;
+  align-items: center;
+}
+.documentation-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #12100c;
+  margin-bottom: 8px;
+}
+.documentation-text {
+  margin-bottom: 155px;
+}
+.documentation-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.documentation-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #12100c;
+  font-weight: 700;
+  background-color: skyblue;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  border-radius: 10.5px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.documentation-link-orange {
+  background-color: #ffae33;
+  padding-inline: 18px;
+}
+.documentation-link-pink {
+  background-color: #ffb0ae;
+  padding-inline: 24px;
+}
+.documentation-photo {
+  max-width: 590px;
 }
 /* ~===============================================================features===========================================================================~ */
 .features {
   padding-top: 318px;
   padding-bottom: 179px;
 }
-.features-title {
-  font-size: 54px;
+.features-wrapper {
+  display: block;
+  align-items: center;
 }
+.features-title {
+  text-align: center;
+  font-size: 54px;
+  color: #12100c;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.features-img {
+  padding-bottom: 49px;
+}
+.features-text {
+  margin-bottom: 48px;
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.extension-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: centers;
+}
+.extension-item {
+  box-shadow: 0 0 0 0px red;
+}
+.extension-link {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #12100c;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
 /*~===============================================================reviews===========================================================================~ */
 .reviews {
   padding-bottom: 178px;
 }
+.reviews-title {
+  font-size: 54px;
+  line-height: 1.18;
+  font-weight: 700;
+  color: #12100c;
+  margin-bottom: 49px;
+  text-align: center;
+}
+.reviews-list {
+  margin-bottom: 123px;
+  display: flex;
+  gap: 24px;
+}
+.reviews-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.review {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+}
+.review-text {
+  font-size: 16px;
+  color: #12100c;
+  line-height: 1.5;
+}
+.review-text-first {
+  margin-bottom: 8px;
+}
+.review-text-last {
+  margin-bottom: 16px;
+}
+.author {
+  display: flex;
+  gap: 12px;
+}
+.author-name {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #12100c;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.author-role {
+  font-size: 16px;
+  color: #12100c;
+  line-height: 1.5;
+}
+.author-link {
+  font-weight: 700;
+}
+.partner-list {
+  margin-inline: auto;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  justify-content: center;
+}
+.partner-item {
+  display: inline-block;
+  align-items: center;
+}
 /* ~==============================================================started========================================================================~ */
 .started {
   padding-bottom: 160px;
+  display: list-item;
+  align-items: center;
 }
+.started-content {
+  display: flex;
+  gap: 26px;
+}
+.started-title {
+  font-size: 54px;
+  line-height: 1.18;
+  font-weight: 700;
+  color: #12100c;
+  margin-bottom: 49px;
+  text-align: center;
+}
+.started-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 56px;
+  padding-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 26px) / 2);
+}
+.started-card-title {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #12100c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.started-card-text {
+  text-align: center;
+  padding-inline: 30px;
+  margin-bottom: 62px;
+}
+.started-card-text-end {
+  margin-bottom: 6px;
+}
+.repositories-list {
+  margin-bottom: 64px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.repositories-link {
+  padding-inline: 33px;
+  padding-block: 9px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  background-color: #ffb0ae;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+}
+.repositories-link-gitlab {
+  background-color: #fc6d26;
+}
+.repositories-link-github {
+  background-color: #000000;
+}
+.repositories-link-bitbucket {
+  background-color: #2684ff;
+}
+.repositories-icon {
+}
+.repositories-item {
+}
+.started-card-link {
+  background-color: #ffe4bc;
+  border-radius: 12px;
+  padding-inline: 16px;
+}
+.workspaces-list {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.workspaces-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px;
+  padding-left: 16px;
+  background-color: #f9f9f9;
+}
+.workspaces-name {
+  flex-grow: 1;
+}
+.workspaces-link {
+  font-size: 14px;
+  line-height: 1.14;
+  background-color: #12100c;
+  color: #ffffff;
+  padding-inline: 12px;
+  padding-block: 8px;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.1);
+}
+
 /* ~================================================================footer========================================================================~ */
 .footer {
   padding-top: 48px;
