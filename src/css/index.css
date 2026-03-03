@@ -12,7 +12,6 @@ body {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: blanchedalmond;
 }
 /* =================================================шапка сайту=============================================================================== */
 .header {
@@ -27,12 +26,21 @@ body {
 }
 .nav-list {
   display: flex;
-  gap: 48px;
+  gap: 40px;
   align-items: center;
 }
 .nav-link {
   font-size: 16px;
   line-height: 1.5;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.nav-link:hover {
+  background-color: rgb(208, 199, 216);
 }
 .login-button {
   font-size: 14px;
@@ -42,6 +50,12 @@ body {
   padding-inline: 22px;
   padding-block: 6px;
   border-radius: 12px;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.login-button:hover {
+  background-color: rgb(236, 130, 31);
 }
 /*================================================================hero========================================================================*/
 .hero {
@@ -51,6 +65,9 @@ body {
   display: flex;
   gap: 120px;
   align-items: center;
+}
+.hero-content {
+  max-width: 560px;
 }
 .hero-title {
   font-size: 80px;
@@ -78,6 +95,14 @@ body {
   border-radius: 16px;
   font-weight: 700;
   font-size: 18px;
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.1);
+  transition-property: box-shadow, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.try-now-link:hover {
+  box-shadow: 0 1px 5px 0 rgb(0, 0, 0, 0.5);
+  transform: translateY(-3px) rotate(-5deg);
 }
 .try-now-text {
   max-width: 190px;
@@ -88,6 +113,38 @@ body {
   display: flex;
   gap: 29px;
   align-items: center;
+}
+.hero-photo {
+  flex-basis: 630px;
+  animation-name: movePhoto;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.hero-photo:hover {
+  animation-play-state: paused;
+}
+@keyframes movePhoto {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(0, -4px);
+  }
+  30% {
+    transform: translate(0, 4px);
+  }
+  45% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(4px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
 }
 /* ============================================================instruction=======================================================================~ */
 .instruction {
@@ -115,6 +172,9 @@ body {
   display: flex;
   gap: 66px;
   align-items: center;
+}
+.documentation-content {
+  max-width: 655px;
 }
 .documentation-title {
   font-weight: 700;
@@ -152,6 +212,36 @@ body {
 }
 .documentation-photo {
   max-width: 590px;
+  flex-basis: 590px;
+  animation-name: movePhoto;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.documentation-photo:hover {
+  animation-play-state: paused;
+}
+@keyframes movePhoto {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(0, -4px);
+  }
+  30% {
+    transform: translate(0, 4px);
+  }
+  45% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(4px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
 }
 /* ~===============================================================features===========================================================================~ */
 .features {
@@ -169,9 +259,12 @@ body {
   font-weight: 700;
   margin-bottom: 48px;
 }
-.features-img {
-  padding-bottom: 49px;
+.features-photo {
+  box-shadow: -2px 2px 15px 8px rgb(255, 138, 0, 0.4);
+  margin-bottom: 49px;
+  border-radius: 14px;
 }
+
 .features-text {
   margin-bottom: 48px;
   text-align: center;
@@ -182,10 +275,16 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
-  justify-content: centers;
+  justify-content: center;
 }
 .extension-item {
   box-shadow: 0 0 0 0px red;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.extension-item :hover {
+  box-shadow: 0 1px 5px 0 rgb(0, 0, 0, 0.5);
 }
 .extension-link {
   display: flex;
@@ -203,7 +302,9 @@ body {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   align-items: center;
 }
-
+.extension-icon {
+  flex-basis: 24px;
+}
 /*~===============================================================reviews===========================================================================~ */
 .reviews {
   padding-bottom: 178px;
@@ -244,6 +345,10 @@ body {
   display: flex;
   gap: 12px;
 }
+.author-photo {
+  flex-basis: 48px;
+  flex-shrink: 0;
+}
 .author-name {
   font-size: 16px;
   line-height: 1.5;
@@ -272,11 +377,13 @@ body {
   display: inline-block;
   align-items: center;
 }
+.partner-link {
+}
+.partner-link:hover {
+}
 /* ~==============================================================started========================================================================~ */
 .started {
   padding-bottom: 160px;
-  display: list-item;
-  align-items: center;
 }
 .started-content {
   display: flex;
@@ -334,6 +441,15 @@ body {
   align-items: center;
   gap: 16px;
   color: #ffffff;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.repositories-item {
+}
+.repositories-link:hover {
+  box-shadow: 0 1px 5px 0 rgb(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 .repositories-link-gitlab {
   background-color: #fc6d26;
@@ -344,14 +460,13 @@ body {
 .repositories-link-bitbucket {
   background-color: #2684ff;
 }
-.repositories-icon {
-}
-.repositories-item {
-}
 .started-card-link {
   background-color: #ffe4bc;
   border-radius: 12px;
   padding-inline: 16px;
+}
+.repositories-icon {
+  flex-basis: 28px;
 }
 .workspaces-list {
   display: flex;
@@ -369,6 +484,9 @@ body {
   padding-left: 16px;
   background-color: #f9f9f9;
 }
+.workspaces-icon {
+  flex-basis: 27px;
+}
 .workspaces-name {
   flex-grow: 1;
 }
@@ -381,10 +499,60 @@ body {
   padding-block: 8px;
   border-radius: 12px;
   box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.1);
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.workspaces-link :hover {
+  background-color: rgb(236, 130, 31);
 }
 
 /* ~================================================================footer========================================================================~ */
 .footer {
   padding-top: 48px;
   padding-bottom: 80px;
+  background-color: #f9f9f9;
+}
+.footer-wrapper {
+  max-width: 900px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 47px;
+}
+.footer-top-nav-list {
+  max-width: 100px;
+}
+.footer-top-title {
+  color: #12100c;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.footer-top-link {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.footer-bottom {
+  border-top: 1px solid #ece7e5;
+  padding-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-bottom-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-copyright {
+  font-size: 13px;
+  line-height: 1.5;
 }
