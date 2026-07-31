@@ -7,3 +7,12 @@ const toggleMenu = () => {
 };
 
 openMenuBtn.addEventListener("click", toggleMenu);
+
+const closeMenu = (event) => {
+  const target = event.target;
+  if (target.closest("[data-menu-link]")) {
+    menu.classList.remove("open");
+    openMenuBtn.classList.remove("open");
+  }
+};
+menu.addEventListener("click", closeMenu);
